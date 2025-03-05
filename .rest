@@ -1,0 +1,23 @@
+@url = localhost:3000
+
+### Adicionar
+POST http://{{url}}/add
+Content-Type: application/json
+
+{
+    "email": "johndoe@example.com",
+    # "email": "admin@admin.com",
+    "password": "12345678",
+    "role": "client"
+}
+
+### Buscar todos
+GET http://{{url}}/all
+
+### Buscar por email
+GET http://{{url}}/find-by-email
+Content-Type: application/json
+
+{
+    "email": "johndoe@example.com"
+}

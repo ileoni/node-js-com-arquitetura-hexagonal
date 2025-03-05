@@ -1,0 +1,13 @@
+
+Bibliotecas
+
+npm i dotenv express express-async-errors express-validator cors bcrypt mysql2 knex objection jsonwebtoken jest ts-jest
+npm i -D tsx ts-node typescript @types/node @types/express @types/cors @types/bcrypt @types/knex @types/jsonwebtoken @types/jest
+
+Comandos
+
+npx tsc --init && npx knex init -x ts && npx ts-jest config:init
+
+npx knex migrate:make create_users_table && npx knex seed:make create_users_seeder
+
+npx knex migrate:latest && npx knex seed:run
